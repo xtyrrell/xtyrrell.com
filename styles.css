@@ -1,0 +1,53 @@
+
+/* CSS */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+html {
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+
+  background: #3A6ED4;
+  color: white;
+}
+
+body {
+  padding: 8px;
+}
+
+a {
+  color: white;
+}
+
+main {
+  max-width: 400px;
+}
+
+
+* {
+  position: relative;
+}
+
+.puzzle-piece {
+  user-select: none;
+  touch-action: none;
+}
+
+/* Device-specific */
+
+.only-touch {
+  display: none;
+}
+
+@media (any-hover: none) {
+  .only-touch {
+    display: block;
+  }
+  .only-mouse {
+    display: none;
+  }
+}
+

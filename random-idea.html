@@ -1,0 +1,37 @@
+<head>
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preconnect" href="https://rsms.me/" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <main>
+    <p id="random-idea"><noscript>You have disabled JavaScript.</noscript></p>
+  </main>
+
+  <script>
+    const el = document.getElementById("random-idea");
+
+    const ideas = [
+      "A community of any size has to balance a tolerance for criticism, so that it can use feedback to get stronger, with the imperative to maintain cohesion and unity.",
+      "The most powerful force humanity can wield is cooperation.",
+      "Everyone deserves the tools to be happy.",
+      "Every idea is both a proposition and a paradigm, or context, in which it is thought. Change either and the idea changes.",
+      "You should eat lots of vegetables.",
+      "Why does the sound of rain comfort us?",
+      "Think of two friends who are very different. What commonality makes you friends with both?",
+      "Sleep in a quiet, dark, and cool room every night.\n\nSome people can't. This is very bad!",
+      "The sun is very big.",
+      "Great, your internet is working!",
+      "Everything happens so much.",
+      "In what moments are you happiest? What are you doing? Who are you with?",
+    ];
+
+    el.innerText = ideas[Math.floor(Math.random() * ideas.length)];
+  </script>
+  <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+  <script src="email.js"></script>
+</body>
