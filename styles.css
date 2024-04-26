@@ -51,3 +51,9 @@ main {
   }
 }
 
+@media print {
+  html {
+    background: transparent;
+    color: black;
+  }
+}
